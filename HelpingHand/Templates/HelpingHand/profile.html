@@ -1,0 +1,18 @@
+{%extends 'HelpingHand/base.html'%} 
+
+
+
+
+{%block content%}
+
+<p>this is your profile buddy.
+  
+    {% for item in query_results %}
+    <h1>{{ item.name }}</h1>
+    <p>{{ item.email }}</p>
+ {% endfor %}
+
+</p>
+
+
+{%endblock%}

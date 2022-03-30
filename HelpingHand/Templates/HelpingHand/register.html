@@ -1,0 +1,17 @@
+{%extends 'HelpingHand/base.html'%} {%block content%}
+
+<form action="/registered/" method="post">
+
+    {% csrf_token %}
+
+    <input type="text" placeholder="Enter your name" name="name" required>
+
+    <input type="mail" placeholder="Enter your mail address" name="mail" required>
+
+    <input type="password" placeholder="Enter your password" name="password" required>
+
+    <div>
+        <input type="submit" name="submit">
+    </div>
+</form>
+{%endblock%}
